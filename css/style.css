@@ -56,6 +56,16 @@ button {
   padding-left: 15px;
   padding-right: 15px;
 }
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 /*HEADER*/
 .header {
   padding-top: 25px;
@@ -295,6 +305,7 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-color);
+  margin-bottom: 16px
 }
 .team-list-content-wrapper {
   padding: 30px 32px;
@@ -312,7 +323,7 @@ button {
   height: 44px;
   border-radius: 50%;
   background-color: var(--white-color);
-  margin-top: 16px;
+  ;
 }
 .social-list-icon {
   fill: var(--main-icon-color);
@@ -328,16 +339,7 @@ button {
 }
 
 /*PORTFOLIO-PAGE*/
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
+
 .services-section {
   padding-top: var(--section-pt);
   padding-bottom: 34px;
@@ -518,22 +520,27 @@ button {
 
 .footer .conteiner {
   display: flex;
+  align-items: baseline;
 }
 .social-list-footer {
-  display: inline-flex;
+  display: flex;
+}
+.social-list-item-footer:not(:last-child) {
+  margin-right: 10px;
 }
 .footer-conteiner {
   margin-left: 70px;
-  padding-top: 12px;
+  
 }
 .footer-paragraf {
-  font-family: var(--main-font-family);
+  font-family: var(--ma,n-font-family);
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+  margin-bottom: 16px;
 }
 .social-footer-list-icon {
   fill: var(--white-color);
@@ -545,7 +552,7 @@ button {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  margin-top: 16px;
+  
   background: rgba(255, 255, 255, 0.1);
 }
 .social-list-link-footer:focus,
