@@ -533,7 +533,7 @@ button {
   
 }
 .footer-paragraf {
-  font-family: var(--ma,n-font-family);
+  font-family: var(--main-font-family);
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
